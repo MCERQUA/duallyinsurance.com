@@ -99,9 +99,9 @@ export default async function LocationPage({ params }: Props) {
         <section className="bg-cream py-16 md:py-20">
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-10">
-              <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} dairies</span>
-              <h2 className="mt-3 h-section">The full program, built for {loc.name} dually truck businesss.</h2>
-              <p className="mt-4 lead">From a family operation to a multi-site production group, we coordinate every line a {loc.name} dually truck needs.</p>
+              <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} dually truck owners</span>
+              <h2 className="mt-3 h-section">The full program, built for {loc.name} dually truck owners.</h2>
+              <p className="mt-4 lead">From a single work truck to a multi-truck fleet, we coordinate every line a {loc.name} dually truck owner needs.</p>
             </FadeIn>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {SERVICES.slice(0, 4).map((s, i) => (
@@ -119,7 +119,7 @@ export default async function LocationPage({ params }: Props) {
 
         <FAQ items={locFaqs} eyebrow={`${loc.name} — FAQ`} title={<>Dually Truck insurance questions for <span className="text-clay">{loc.name}</span></>} background="sand" />
 
-        <CTABand title={`Insuring dually truck businesss in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
+        <CTABand title={`Insuring dually truck owners in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
       </main>
       <Footer />
     </>

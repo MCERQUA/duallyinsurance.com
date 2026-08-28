@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: `${SITE.name} | Contractors Choice Agency`,
     description:
       "Dually truck insurance for F-350, Ram 3500, and Silverado 3500 owners — commercial auto, physical damage, cargo, non-trucking liability, and GAP coverage for working truck owners. Licensed all 50 states.",
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${SITE.name} — dually truck dually truck coverage` }],
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${SITE.name} — dually truck insurance coverage` }],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,14 +59,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     employee: { "@type": "Person", name: "Josh Cotner", jobTitle: "Founder & Insurance Agent" },
     areaServed: { "@type": "Country", name: "United States" },
     serviceType: [
-      "dually truck Cattle & dually truck Mortality Insurance",
-      "dually truck Property & Buildings Insurance for Dairies",
-      "Equipment Breakdown & dually truck Spoilage Insurance",
-      "dually truck Product Liability Insurance",
-      "General Liability Insurance for dually truck dually trucks",
-      "Workers' Compensation for dually truck Crews",
-      "Commercial Auto & Trucking for dually truck Tankers",
-      "Pollution & Environmental Liability for Dairies",
+      "Commercial Auto Insurance for Dually Trucks",
+      "Physical Damage Coverage for Dually Trucks",
+      "Commercial Liability Insurance for Dually Truck Owners",
+      "Non-Trucking Liability (Bobtail) Insurance",
+      "Cargo Insurance for Dually Trucks and Trailers",
+      "Commercial Umbrella Insurance for Dually Truck Owners",
+      "Tools & Equipment Coverage for Dually Truck Owners",
+      "GAP Coverage for Dually Trucks",
     ],
   };
 
