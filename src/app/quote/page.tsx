@@ -7,7 +7,10 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
 import { US_STATES, QUOTE_SERVICE_TYPES, YEARS_OPTIONS, COPY } from "@/lib/content";
-import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin } from "lucide-react";
+import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin, Send } from "lucide-react";
+
+const DOCS_MAILTO =
+  "mailto:josh@contractorschoiceagency.com?subject=Dually%20insurance%20quote%20%E2%80%94%20documents%20attached&body=Attached%3A%20driver%27s%20license%2C%20truck%20VIN%2C%20trailer%20VIN%2C%20and%20current%20insurance%20ID%20card.%0A%0AName%3A%0APhone%3A%0A";
 
 const WEBHOOK_URL = `https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=${SITE.domain}`;
 
@@ -97,6 +100,31 @@ export default function QuotePage() {
                     </div>
                   </FadeIn>
                 ) : (
+                  <>
+                  <FadeIn>
+                    <div className="mb-6 rounded-3xl border-2 border-gold/50 bg-gold/10 p-6 md:p-7">
+                      <div className="flex items-start gap-4">
+                        <span className="flex-shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gold/25 text-espresso"><Send className="h-5 w-5" strokeWidth={2.2} /></span>
+                        <div className="min-w-0">
+                          <p className="text-xs font-heading font-bold uppercase tracking-wider text-clay">Fastest way to a quote</p>
+                          <h2 className="mt-1 font-heading font-extrabold text-espresso text-lg md:text-xl leading-snug">Skip the form — send us your documents</h2>
+                          <p className="mt-2 text-mocha text-sm leading-relaxed">
+                            For a quick quote, email or text your driver&rsquo;s license, VINs for your truck and trailer, and current insurance ID card to{" "}
+                            <a href="mailto:josh@contractorschoiceagency.com" className="font-heading font-bold text-clay underline decoration-clay/40 underline-offset-2 hover:decoration-clay break-words">josh@contractorschoiceagency.com</a>.
+                          </p>
+                          <div className="mt-4 flex flex-wrap items-center gap-3">
+                            <a href={DOCS_MAILTO} className="inline-flex items-center gap-2 px-5 py-2.5 bg-espresso text-cream font-heading font-bold text-sm rounded-full hover:bg-espresso/90 transition-colors">
+                              <Send className="h-4 w-4" /> Email my documents
+                            </a>
+                            <a href={SITE.phoneHref} className="inline-flex items-center gap-2 px-5 py-2.5 border border-espresso/25 text-espresso font-heading font-bold text-sm rounded-full hover:bg-espresso/5 transition-colors">
+                              <Phone className="h-4 w-4" /> {SITE.phone}
+                            </a>
+                          </div>
+                          <p className="mt-3 text-xs text-mocha/70">Prefer to fill things out? The form below works just as well.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </FadeIn>
                   <FadeIn>
                     <form name="quote" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9 space-y-5">
                       <input type="hidden" name="form-name" value="quote" />
@@ -138,6 +166,7 @@ export default function QuotePage() {
                       <p className="text-xs text-center text-mocha/70">No spam. No commitment. We'll only contact you about your quote.</p>
                     </form>
                   </FadeIn>
+                  </>
                 )}
               </div>
             </div>
