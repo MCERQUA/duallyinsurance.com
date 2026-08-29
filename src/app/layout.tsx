@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: `${SITE.name} | Contractors Choice Agency`,
     description:
       "Dually truck insurance for F-350, Ram 3500, and Silverado 3500 owners — commercial auto, physical damage, cargo, non-trucking liability, and GAP coverage for working truck owners. Licensed all 50 states.",
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${SITE.name} — dually truck insurance coverage` }],
+    images: [{ url: "/images/og-image.jpg", width: 1216, height: 640, alt: `${SITE.name} — dually truck insurance coverage` }],
   },
   twitter: {
     card: "summary_large_image",

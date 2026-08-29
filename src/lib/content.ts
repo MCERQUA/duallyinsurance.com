@@ -111,7 +111,7 @@ export const COPY = {
     h2Lead: "Dually truck insurance.",
     h2Highlight: "All 50 states.",
     lead: "Dually Insurance places dually truck programs for working truck owners in every state — from Texas and Montana to Wyoming and beyond.",
-    imageAlt: "Dually truck map with coverage across all 50 states",
+    imageAlt: "Dually truck towing a gooseneck trailer on an interstate — coverage in all 50 states",
     badgeTitle: "Nationwide dually truck coverage.",
     badgeSub: "Writing dually insurance in all 50 states since 2005.",
   },
