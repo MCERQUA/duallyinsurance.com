@@ -110,11 +110,16 @@ export default function QuotePage() {
                           <h2 className="mt-1 font-heading font-extrabold text-espresso text-lg md:text-xl leading-snug">Skip the form — send us your documents</h2>
                           <p className="mt-2 text-mocha text-sm leading-relaxed">
                             For a quick quote, email or text your driver&rsquo;s license, VINs for your truck and trailer, and current insurance ID card to{" "}
-                            <a href="mailto:josh@contractorschoiceagency.com" className="font-heading font-bold text-clay underline decoration-clay/40 underline-offset-2 hover:decoration-clay break-words">josh@contractorschoiceagency.com</a>.
+                            <a href="mailto:josh@contractorschoiceagency.com" className="font-heading font-bold text-clay underline decoration-clay/40 underline-offset-2 hover:decoration-clay break-words">josh@contractorschoiceagency.com</a>{" "}
+                            or text{" "}
+                            <a href="sms:+14803818949" className="font-heading font-bold text-clay underline decoration-clay/40 underline-offset-2 hover:decoration-clay whitespace-nowrap">480.381.8949</a>.
                           </p>
                           <div className="mt-4 flex flex-wrap items-center gap-3">
                             <a href={DOCS_MAILTO} className="inline-flex items-center gap-2 px-5 py-2.5 bg-espresso text-cream font-heading font-bold text-sm rounded-full hover:bg-espresso/90 transition-colors">
                               <Send className="h-4 w-4" /> Email my documents
+                            </a>
+                            <a href="sms:+14803818949" className="inline-flex items-center gap-2 px-5 py-2.5 border border-espresso/25 text-espresso font-heading font-bold text-sm rounded-full hover:bg-espresso/5 transition-colors">
+                              <Phone className="h-4 w-4" /> Text 480.381.8949
                             </a>
                             <a href={SITE.phoneHref} className="inline-flex items-center gap-2 px-5 py-2.5 border border-espresso/25 text-espresso font-heading font-bold text-sm rounded-full hover:bg-espresso/5 transition-colors">
                               <Phone className="h-4 w-4" /> {SITE.phone}
