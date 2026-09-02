@@ -24,6 +24,24 @@ const trustItems = [
 export default function QuotePage() {
   const [formData, setFormData] = useState({
     name: "", businessName: "", email: "", phone: "", state: "", serviceType: "", yearsInBusiness: "", message: "", "bot-field": "",
+    date_of_birth: "",
+    street_address: "",
+    drivers_license_number: "",
+    drivers_license_issue_date: "",
+    drivers_license_expiration_date: "",
+    driver_names: "",
+    vehicle_year: "",
+    vehicle_make: "",
+    vehicle_model: "",
+    vehicle_vin: "",
+    vehicle_value: "",
+    accessories_description: "",
+    accessories_value: "",
+    current_policy_number: "",
+    current_policy_start_date: "",
+    current_policy_expiration_date: "",
+    current_coverage_limits: "",
+    prior_auto_insurance: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -161,6 +179,83 @@ export default function QuotePage() {
                       </div>
 
                       {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
+
+                      <div className="pt-2">
+                        <p className="font-semibold mb-1">Driver, vehicle and current policy</p>
+                        <p className="text-xs opacity-70 mb-3">Every driver and every vehicle or trailer must be listed or they are not covered. Have your licence, VINs and current insurance ID card handy - or email/text them to us and we will quote from those.</p>
+                      </div>
+                      <div>
+                        <label htmlFor="date_of_birth" className={labelClass}>Date of birth</label>
+                        <input id="date_of_birth" name="date_of_birth" type="date" value={formData.date_of_birth} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="street_address" className={labelClass}>Street address</label>
+                        <input id="street_address" name="street_address" type="text" value={formData.street_address} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="drivers_license_number" className={labelClass}>Driver's license number</label>
+                        <input id="drivers_license_number" name="drivers_license_number" type="text" value={formData.drivers_license_number} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="drivers_license_issue_date" className={labelClass}>Driver's license issue date</label>
+                        <input id="drivers_license_issue_date" name="drivers_license_issue_date" type="date" value={formData.drivers_license_issue_date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="drivers_license_expiration_date" className={labelClass}>Driver's license expiration date</label>
+                        <input id="drivers_license_expiration_date" name="drivers_license_expiration_date" type="date" value={formData.drivers_license_expiration_date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="driver_names" className={labelClass}>All drivers - name, date of birth and licence number</label>
+                        <textarea id="driver_names" name="driver_names" rows={3} value={formData.driver_names} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                      </div>
+                      <div>
+                        <label htmlFor="vehicle_year" className={labelClass}>Vehicle year</label>
+                        <input id="vehicle_year" name="vehicle_year" type="text" value={formData.vehicle_year} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="vehicle_make" className={labelClass}>Vehicle make</label>
+                        <input id="vehicle_make" name="vehicle_make" type="text" value={formData.vehicle_make} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="vehicle_model" className={labelClass}>Vehicle model</label>
+                        <input id="vehicle_model" name="vehicle_model" type="text" value={formData.vehicle_model} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="vehicle_vin" className={labelClass}>VIN - every vehicle and trailer</label>
+                        <textarea id="vehicle_vin" name="vehicle_vin" rows={3} value={formData.vehicle_vin} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                      </div>
+                      <div>
+                        <label htmlFor="vehicle_value" className={labelClass}>Vehicle value</label>
+                        <input id="vehicle_value" name="vehicle_value" type="text" value={formData.vehicle_value} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="accessories_description" className={labelClass}>Description of accessories</label>
+                        <textarea id="accessories_description" name="accessories_description" rows={3} value={formData.accessories_description} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                      </div>
+                      <div>
+                        <label htmlFor="accessories_value" className={labelClass}>Value of accessories</label>
+                        <input id="accessories_value" name="accessories_value" type="text" value={formData.accessories_value} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="current_policy_number" className={labelClass}>Current policy number</label>
+                        <input id="current_policy_number" name="current_policy_number" type="text" value={formData.current_policy_number} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="current_policy_start_date" className={labelClass}>Policy start date</label>
+                        <input id="current_policy_start_date" name="current_policy_start_date" type="date" value={formData.current_policy_start_date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="current_policy_expiration_date" className={labelClass}>Policy expiration date</label>
+                        <input id="current_policy_expiration_date" name="current_policy_expiration_date" type="date" value={formData.current_policy_expiration_date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="current_coverage_limits" className={labelClass}>Current coverage limits</label>
+                        <input id="current_coverage_limits" name="current_coverage_limits" type="text" value={formData.current_coverage_limits} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="prior_auto_insurance" className={labelClass}>Prior auto insurance (any type, incl. a household member's)</label>
+                        <input id="prior_auto_insurance" name="prior_auto_insurance" type="text" value={formData.prior_auto_insurance} onChange={handleChange} className={inputClass} />
+                      </div>
 
                       <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
                         {submitting ? "Sending…" : "Request my free quote"}{!submitting && <ArrowRight className="h-5 w-5" />}
