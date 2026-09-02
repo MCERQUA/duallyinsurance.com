@@ -76,10 +76,10 @@ export const SERVICES = [
     title: "Cargo Insurance",
     icon: "Package",
     description:
-      "Cargo coverage for equipment, livestock, hay, tools, or goods hauled by your dually — per-load or blanket cargo policies available.",
+      "Cargo coverage for equipment, trailers, tools, or freight hauled by your dually — per-load or blanket cargo policies available.",
     metaTitle: "Dually Truck Cargo Insurance | Dually Insurance",
     metaDescription:
-      "Cargo insurance for dually trucks hauling equipment, livestock, tools, or goods. Per-load and blanket cargo options.",
+      "Cargo insurance for dually trucks hauling equipment, trailers, tools, or freight. Per-load and blanket cargo options.",
   },
   {
     slug: "umbrella",
@@ -140,7 +140,7 @@ export const LOCATIONS = [
     state: "MT",
     region: "Montana — Big Sky Country",
     metaTitle: "Dually Truck Insurance Montana | Dually Insurance",
-    metaDescription: "Dually truck insurance in Montana — ranch trucks, livestock haulers, and contractor dually coverage statewide.",
+    metaDescription: "Dually truck insurance in Montana — work trucks, heavy haulers, and contractor dually coverage statewide.",
     h1: "Dually Truck Insurance in Montana",
     intro: "Montana's ranchers, outfitters, and contractors put serious miles on their dually trucks. We write coverage for working trucks in Big Sky Country.",
   },
@@ -152,7 +152,7 @@ export const LOCATIONS = [
     metaTitle: "Dually Truck Insurance Wyoming | Dually Insurance",
     metaDescription: "Dually insurance in Wyoming for ranchers, haulers, and contractors. F-350, Ram 3500, and Silverado 3500 coverage.",
     h1: "Dually Truck Insurance in Wyoming",
-    intro: "Wyoming's ranchers, energy sector contractors, and livestock haulers need dually coverage that matches how they use their trucks. We get it right.",
+    intro: "Wyoming's energy sector contractors, heavy haulers, and owner-operators need dually coverage that matches how they use their trucks. We get it right.",
   },
   {
     slug: "colorado",
@@ -160,7 +160,7 @@ export const LOCATIONS = [
     state: "CO",
     region: "Colorado — Centennial State",
     metaTitle: "Dually Truck Insurance Colorado | Dually Insurance",
-    metaDescription: "Dually truck insurance in Colorado — contractor, ranch, and hauler coverage for F-350, Ram 3500, and Silverado 3500.",
+    metaDescription: "Dually truck insurance in Colorado — contractor, work-truck, and hauler coverage for F-350, Ram 3500, and Silverado 3500.",
     h1: "Dually Truck Insurance in Colorado",
     intro: "From Front Range contractors to Western Slope ranchers, Colorado dually owners need coverage built for the way they work.",
   },
@@ -180,9 +180,9 @@ export const LOCATIONS = [
     state: "NE",
     region: "Nebraska — Cornhusker State",
     metaTitle: "Dually Truck Insurance Nebraska | Dually Insurance",
-    metaDescription: "Dually truck insurance in Nebraska — ranch, livestock, and contractor coverage for F-350, Ram 3500, and Silverado 3500 owners.",
+    metaDescription: "Dually truck insurance in Nebraska — work-truck, hauler, and contractor coverage for F-350, Ram 3500, and Silverado 3500 owners.",
     h1: "Dually Truck Insurance in Nebraska",
-    intro: "Nebraska's beef ranchers and agricultural contractors need dually insurance that covers their trucks the way they're actually used.",
+    intro: "Nebraska's owner-operators and heavy-haul contractors need dually insurance that covers their trucks the way they're actually used.",
   },
   {
     slug: "nationwide",
@@ -239,9 +239,9 @@ export const TESTIMONIALS = [
     location: "Wyoming",
   },
   {
-    quote: "I haul livestock across three states with my Silverado 3500. One call and they had me set up with commercial auto, cargo, and non-trucking liability. Everything lined up perfectly.",
+    quote: "I haul equipment across three states with my Silverado 3500. One call and they had me set up with commercial auto, cargo, and non-trucking liability. Everything lined up perfectly.",
     name: "Donna K.",
-    role: "Livestock Hauler",
+    role: "Heavy Hauler",
     location: "Montana",
   },
 ] as const;
