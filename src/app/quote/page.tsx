@@ -26,6 +26,8 @@ export default function QuotePage() {
     name: "", businessName: "", email: "", phone: "", state: "", serviceType: "", yearsInBusiness: "", message: "", "bot-field": "",
     date_of_birth: "",
     street_address: "",
+    city: "",
+    zip: "",
     drivers_license_number: "",
     drivers_license_issue_date: "",
     drivers_license_expiration_date: "",
@@ -193,6 +195,14 @@ export default function QuotePage() {
                       <div>
                         <label htmlFor="street_address" className={labelClass}>Street address</label>
                         <input id="street_address" name="street_address" type="text" value={formData.street_address} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="city" className={labelClass}>City</label>
+                        <input id="city" name="city" type="text" value={formData.city} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="zip" className={labelClass}>ZIP code</label>
+                        <input id="zip" name="zip" type="text" inputMode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" maxLength={10} value={formData.zip} onChange={handleChange} className={inputClass} />
                       </div>
                       <div>
                         <label htmlFor="drivers_license_number" className={labelClass}>Driver's license number</label>
