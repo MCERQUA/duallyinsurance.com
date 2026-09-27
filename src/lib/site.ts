@@ -3,18 +3,18 @@ export const SITE = {
   domain: "duallyinsurance.com",
   url: "https://duallyinsurance.com",
   phone: "844-967-5247",
-  email: "info@duallyinsurance.com",
+  email: "josh@contractorschoiceagency.com",
   npn: "8608479",
   legalName: "Contractors Choice Agency, LLC",
   phoneHref: "tel:+18449675247",
-  hours: "Mon–Fri 8 am–6 pm CT",
+  hours: "Mon–Fri 8 am–6 pm (Arizona time)",
   description:
     "Dually truck insurance for F-350, Ram 3500, and Silverado 3500 owners — commercial auto, physical damage, liability, cargo, and non-trucking coverage. Built for working truck owners.",
   address: {
-    street: "1645 E Missouri Ave, Suite 200",
-    city: "Phoenix",
+    street: "12220 E Riggs Rd, Suite #104",
+    city: "Chandler",
     state: "AZ",
-    zip: "85016",
+    zip: "85249",
     country: "US",
   },
 };
