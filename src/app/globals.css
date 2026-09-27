@@ -53,18 +53,25 @@ h1, h2, h3, h4 {
 .shadow-card-hover { box-shadow: 0 8px 24px rgba(28,20,16,0.13), 0 2px 6px rgba(28,20,16,0.08); }
 .shadow-warm-lg { box-shadow: 0 16px 48px rgba(28,20,16,0.16), 0 4px 12px rgba(28,20,16,0.10); }
 
-/* ─── Buttons ────────────────────────────────────────────────────────── */
+/* ─── Buttons (btn-primary/-secondary/-ghost are what the markup uses; they had no rules until 2026-09-27) ────────────────────────────────────────────────────────── */
+.btn-primary,
 .btn-clay {
   @apply inline-flex items-center gap-2 rounded-2xl px-7 py-3.5
          font-heading font-bold text-sm tracking-wide uppercase
          bg-clay text-white shadow-warm-lg
          hover:bg-clay-dark active:scale-[0.98] transition-all duration-200;
 }
+.btn-secondary,
 .btn-outline {
   @apply inline-flex items-center gap-2 rounded-2xl px-7 py-3.5
          font-heading font-bold text-sm tracking-wide uppercase
          border-2 border-clay text-clay
          hover:bg-clay hover:text-white active:scale-[0.98] transition-all duration-200;
+}
+.btn-ghost {
+  @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3
+         font-heading font-bold text-sm tracking-wide
+         text-clay hover:bg-clay/10 active:scale-[0.98] transition-all duration-200;
 }
 .btn-gold {
   @apply inline-flex items-center gap-2 rounded-2xl px-7 py-3.5
