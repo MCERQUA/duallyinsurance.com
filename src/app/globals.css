@@ -4,18 +4,18 @@
 
 /* ─── Steel & Chrome Design System ─────────────────────────────────── */
 :root {
-  --clay: #1B2A4A;
-  --clay-dark: #0F1C33;
-  --clay-light: #2D4070;
-  --gold: #C0C8D4;
-  --gold-dark: #8A9BB4;
-  --gold-light: #D8E0E8;
-  --espresso: #0F1C33;
-  --cocoa: #2D4070;
-  --mocha: #6B7E99;
-  --adobe: #C0C8D4;
-  --cream: #F5F7FA;
-  --sand: #E8EDF4;
+  --clay: #8A3E1A;
+  --clay-dark: #6B2F13;
+  --clay-light: #B4552D;
+  --gold: #D98F2B;
+  --gold-dark: #B8741C;
+  --gold-light: #F0B458;
+  --espresso: #1C1410;
+  --cocoa: #2E241E;
+  --mocha: #6B625A;
+  --adobe: #E0D6CA;
+  --cream: #FBF8F3;
+  --sand: #F3EEE6;
 }
 
 /* ─── Typography ────────────────────────────────────────────────────── */
@@ -49,9 +49,9 @@ h1, h2, h3, h4 {
          text-xs font-heading font-semibold tracking-wide uppercase
          bg-gold/20 text-cocoa border border-gold/30;
 }
-.shadow-card { box-shadow: 0 2px 8px rgba(27,42,74,0.07), 0 1px 2px rgba(27,42,74,0.05); }
-.shadow-card-hover { box-shadow: 0 8px 24px rgba(27,42,74,0.13), 0 2px 6px rgba(27,42,74,0.08); }
-.shadow-warm-lg { box-shadow: 0 16px 48px rgba(27,42,74,0.16), 0 4px 12px rgba(27,42,74,0.10); }
+.shadow-card { box-shadow: 0 2px 8px rgba(28,20,16,0.07), 0 1px 2px rgba(28,20,16,0.05); }
+.shadow-card-hover { box-shadow: 0 8px 24px rgba(28,20,16,0.13), 0 2px 6px rgba(28,20,16,0.08); }
+.shadow-warm-lg { box-shadow: 0 16px 48px rgba(28,20,16,0.16), 0 4px 12px rgba(28,20,16,0.10); }
 
 /* ─── Buttons ────────────────────────────────────────────────────────── */
 .btn-clay {
@@ -75,10 +75,10 @@ h1, h2, h3, h4 {
 
 /* ─── Section backgrounds ────────────────────────────────────────────── */
 .bg-warm-radial {
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, #E8EDF4 0%, #F5F7FA 100%);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, #F3EEE6 0%, #FBF8F3 100%);
 }
 .bg-clay-gradient {
-  background: linear-gradient(135deg, #1B2A4A 0%, #2D4070 100%);
+  background: linear-gradient(135deg, #8A3E1A 0%, #B4552D 100%);
 }
 
 /* ─── Inputs ─────────────────────────────────────────────────────────── */
