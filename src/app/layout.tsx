@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }, { url: "/favicon.ico", sizes: "32x32" }] },
+  icons: { icon: [{ url: "/favicon.ico", sizes: "32x32" }, { url: "/icon.png", type: "image/png", sizes: "512x512" }] },
   title: {
     default: `${SITE.name} | Contractors Choice Agency`,
     template: `%s | ${SITE.name}`,
